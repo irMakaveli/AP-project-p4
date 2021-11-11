@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/class.hpp
+
+/home/system64/html/project/src/ap-project-p1.cpp
+iostream
+-
+class.hpp
+/home/system64/html/project/src/class.hpp
+
+/home/system64/html/project/src/src.cpp
+iostream
+-
+class.hpp
+/home/system64/html/project/src/class.hpp
+
