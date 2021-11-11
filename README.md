@@ -1,5 +1,6 @@
 # AP-project-p1
 advanced programming project phase 1
+in this phase we heve not commands and we just write general form and classes of project
 project : cattleman
 in this project we can sell or buy some animals and sell animals or their production then we can develope our farms
 language :c++
@@ -9,3 +10,5 @@ class feed : our animals needs to eate feed
 class Hen : hens generate egg for our farm
 class Ship : with the sheeps we have sheep milk 
 class Cow : cows are best animals in the farm. with cows we can generate cheese ,milk,yogurt and sell them 
+
+
