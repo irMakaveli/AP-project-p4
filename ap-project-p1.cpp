@@ -61,7 +61,7 @@ int feed::getFeed(int count,int fed)
     if((count < 0 && count *fed < 0)||count*fed> feeds)
     {
         cout<<"wrong value"<<endl;
-        return;
+        exit;//exception
     } 
     else
     {
@@ -132,6 +132,26 @@ class Ship
     void setshipMilk(int);
     int getshipMilk();
 };
+Ship::Ship(int count, int price)
+{
+    ShipCount+=count;
+}
+void Ship::setShip(int price)
+{
+    ShipCount+=price/10;
+}
+int Ship::getShip()
+{
+    return this->ShipCount;
+}
+void Ship::setshipMilk(int feds)
+{
+    shipMilk += feds/3;
+}
+int Ship::getshipMilk()
+{
+    return this->shipMilk;
+}
 class Cow
 {
     int yogurt;
@@ -149,6 +169,19 @@ class Cow
     void setyogurt(int);
     int getyogurt();
 };
+Cow::Cow(int count,int price)
+{
+    CowCount+=price/count;
+}
+void Cow::setcow(int price)
+{
+    CowCount+=price/20;
+}
+int Cow::getcow()
+{
+    return this->CowCount;
+}
+
 int main()
 {
 
