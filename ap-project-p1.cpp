@@ -52,7 +52,28 @@ class feed
     feed(int);
     void setFeed(int);
     int getFeed();
+    void eated(int i);
 };
+void feed::eated(int i)
+{
+    if(feeds - i >=0)
+    {
+        feeds-=i;
+    }
+}
+int feed::getFeed()
+{
+    return feeds;
+}
+void feed::setFeed(int money)
+{
+    feeds+=money/2;
+    
+}
+feed::feed(int i)
+{
+    setFeed(i);
+}
 class Hen
 {
     int HenCount;
@@ -64,6 +85,7 @@ class Hen
     void setEgg(int);
     int getEgg();
 };
+
 class Ship
 {
     int ShipCount=0;
