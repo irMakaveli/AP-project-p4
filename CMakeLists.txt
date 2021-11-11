@@ -1,0 +1,5 @@
+project(project)
+set(CMAKE_CXX_STANDARD 11)
+cmake_minimum_required(VERSION 3.0)
+include_directories(include / class.hpp)
+add_executable(app ap-project-p1.cpp src.cpp)

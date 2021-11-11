@@ -18,7 +18,6 @@ class feed
     void setFeed(int);
     int getFeed();
     int getFeed(int ,int);
-    void eated(int i);
 };
 class Hen
 {
