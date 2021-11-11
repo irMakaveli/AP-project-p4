@@ -52,8 +52,23 @@ class feed
     feed(int);
     void setFeed(int);
     int getFeed();
+    int getFeed(int ,int);
     void eated(int i);
 };
+int feed::getFeed(int count,int fed)
+{
+    
+    if((count < 0 && count *fed < 0)||count*fed> feeds)
+    {
+        cout<<"wrong value"<<endl;
+        return;
+    } 
+    else
+    {
+        this->feeds -= fed*count;
+    }   
+    return fed*count;
+}
 void feed::eated(int i)
 {
     if(feeds - i >=0)
@@ -76,16 +91,36 @@ feed::feed(int i)
 }
 class Hen
 {
-    int HenCount;
+    int HenCount=0;
     int egg=0;
     public:
     Hen(int , int);//count , price
     void setHen(int);
     int getHen();
-    void setEgg(int);
+    void setEgg(int );
     int getEgg();
 };
+Hen::Hen(int count , int price)
+{
 
+    HenCount+=count;   
+}
+void Hen::setHen(int i)
+{
+    HenCount+=i/4;
+}
+int Hen::getEgg()
+{
+    return this->egg;
+}
+int Hen::getHen()
+{
+    return this->HenCount;
+}
+void Hen::setEgg(int i )
+{
+    this->egg+=i/2;
+}
 class Ship
 {
     int ShipCount=0;
