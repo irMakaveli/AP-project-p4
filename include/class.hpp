@@ -6,10 +6,11 @@ class Money
     public:
     Money(int);
     void setmoney(int );
+    void operator-(int);
     int getmoney();
     int getmoney(int , int);
+    void operator+(int);
 };
-
 class feed
 {
     int feeds;
@@ -18,30 +19,48 @@ class feed
     void setFeed(int);
     int getFeed();
     int getFeed(int ,int);
+    bool operator+(int);
 };
-class Hen
+class animal
 {
-    int HenCount=0;
-    int egg=0;
+    protected:
+    int price;
+    int eat;
     public:
+    void operator+(int);
+    animal(int ,int);
+    void set_price(int);
+    int get_price();
+    void set_eat(int);
+    int get_eat();
+};
+class Hen : public animal
+{
+    int HenCount = 0;
+    int egg = 0;
+    public:
+    void operator-( int );
+    void operator+(int );
     Hen(int , int);//count , price
     void setHen(int);
     int getHen();
-    void setEgg(int );
+    void setEgg(int);
     int getEgg();
 };
-class Ship
+class Sheep : public animal
 {
-    int ShipCount=0;
-    int shipMilk=0;
+    int SheepCount=0;
+    int sheepMilk=0;
     public:
-    Ship(int , int);
-    void setShip(int);
-    int getShip();
-    void setshipMilk(int);
-    int getshipMilk();
+    Sheep(int , int);
+    void operator-(int);
+    void operator+(int);
+    void setSheep(int);
+    int getSheep();
+    void setsheepMilk(int);
+    int getsheepMilk();
 };
-class Cow
+class Cow : public animal
 {
     int yogurt=0;
     int cheese=0;
@@ -49,6 +68,8 @@ class Cow
     int CowCount=0;
     public:
     Cow(int , int );
+    void operator-(int);
+    void operator+(int);
     void setcow(int);
     int getcow();
     void setcowMilk(int);
@@ -58,5 +79,4 @@ class Cow
     void setyogurt(int);
     int getyogurt();
 };
-
 #endif // !CLASS_HPP

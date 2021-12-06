@@ -6,9 +6,13 @@ Money::Money(int money)
     this->money=0;//default
     setmoney(money);
 }
+void Money::operator+(int i)
+{
+    setmoney(i);
+}
 void Money::setmoney(int value)
 {//validating
-    if(value < 0 && value + money < 0)//meghdar sekkeh nabaiad manfi bashad 
+    if(value + money < 0)//meghdar sekkeh nabaiad manfi bashad 
     {
         cout<<"wrong value"<<endl;
         return;
@@ -60,14 +64,55 @@ int feed::getFeed()//dastresi be oloofeh
 void feed::setFeed(int money)//money = meghdare oloofeh * gheymate oloofeh(2)
 {
     feeds+=money/2;
-    
 }
 feed::feed(int i)
 {
     feeds = 0;//default
     setFeed(i);
 }
-Hen::Hen(int count , int price)
+void Money::operator-(int i)
+{
+    setmoney(i);
+}
+bool feed::operator+(int i)
+{
+    setFeed(i);
+    return true;
+}
+void Hen::operator-(int i)
+{
+    if( HenCount - i>=0)
+    {
+        HenCount = HenCount - i;
+    }
+}
+void Hen::operator+(int i)
+{
+    setHen(i*4);
+}
+void Sheep::operator-(int i)
+{
+    if( SheepCount - i>=0)
+    {
+        SheepCount = SheepCount - i;
+    }
+}
+void Sheep::operator+(int i)
+{
+    setSheep(i*10);
+}
+void Cow::operator-(int i)
+{
+    if( CowCount - i>=0)
+    {
+        CowCount = CowCount - i;
+    }
+}
+void Cow::operator+(int i)
+{
+    setcow(i*20);
+}
+Hen::Hen(int count , int price):animal(1 , price)
 {
    HenCount+=count;   
 }
@@ -87,25 +132,25 @@ void Hen::setEgg(int i )//i haman olufeh ast
 {
     this->egg+=i/2;
 }
-Ship::Ship(int count, int price)//count tedad gusfand ha va price gheimate gusfand ha
+Sheep::Sheep(int count, int price):animal(3,price)//count tedad gusfand ha va price gheimate gusfand ha
 {
-    ShipCount+=count;
+    SheepCount+=count;
 }
-void Ship::setShip(int price)//kharide gusfand
+void Sheep::setSheep(int price)//kharide gusfand
 {
-    ShipCount+=price/10;
+    SheepCount+=price/10;
 }
-int Ship::getShip()
+int Sheep::getSheep()
 {
-    return this->ShipCount;//tedade gusfand ha
+    return this->SheepCount;//tedade gusfand ha
 }
-void Ship::setshipMilk(int feds)//shire gusfand
+void Sheep::setsheepMilk(int feds)//shire gusfand
 {
-    shipMilk += feds/3;
+    sheepMilk += feds/3;
 }
-int Ship::getshipMilk()
+int Sheep::getsheepMilk()
 {
-    return this->shipMilk;
+    return this->sheepMilk;
 }
 void Cow::setcheese(int value)//tolide panir
 {
@@ -153,10 +198,9 @@ void Cow::setcowMilk(int feds)//tolide shir
 {
     cowMilk+=feds/5;
 }
-Cow::Cow(int count,int price)//kharide gav
+Cow::Cow(int count,int price):animal(5 , price)//kharide gav
 {
     CowCount+=count;
-   
 }
 void Cow::setcow(int price)//afzayesh tedade gav ha
 {
@@ -165,4 +209,29 @@ void Cow::setcow(int price)//afzayesh tedade gav ha
 int Cow::getcow()
 {
     return this->CowCount;
+}
+animal::animal(int c ,int p)
+{
+    set_price(p);
+    set_eat(c);
+}
+void animal::set_price(int p)
+{
+    price = p;
+}
+int animal::get_price()
+{
+    return price;
+}
+void animal::set_eat(int i)
+{
+    eat = i;
+}
+int animal::get_eat()
+{
+    return eat;
+}
+void animal::operator+(int)
+{
+        
 }
