@@ -6,11 +6,3 @@
 
 #IncludeRegexTransform: 
 
-../include/class.hpp
-
-/home/system64/html/project/src/src.cpp
-iostream
--
-class.hpp
-/home/system64/html/project/src/class.hpp
-

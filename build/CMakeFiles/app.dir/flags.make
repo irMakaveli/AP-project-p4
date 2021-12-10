@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/system64/html/project/include -I/ -I/home/system64/html/project/class.hpp 
+CXX_INCLUDES = -I/home/system64/html/project/include -I/ 
 

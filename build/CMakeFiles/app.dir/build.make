@@ -70,32 +70,122 @@ CMakeFiles/app.dir/src/ap-project-p1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/ap-project-p1.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/system64/html/project/src/ap-project-p1.cpp -o CMakeFiles/app.dir/src/ap-project-p1.cpp.s
 
-CMakeFiles/app.dir/src/src.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/src/src.cpp.o: ../src/src.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/system64/html/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/src/src.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/src.cpp.o -c /home/system64/html/project/src/src.cpp
+CMakeFiles/app.dir/src/animal.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/animal.cpp.o: ../src/animal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/system64/html/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/src/animal.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/animal.cpp.o -c /home/system64/html/project/src/animal.cpp
 
-CMakeFiles/app.dir/src/src.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/src.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/system64/html/project/src/src.cpp > CMakeFiles/app.dir/src/src.cpp.i
+CMakeFiles/app.dir/src/animal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/animal.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/system64/html/project/src/animal.cpp > CMakeFiles/app.dir/src/animal.cpp.i
 
-CMakeFiles/app.dir/src/src.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/src.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/system64/html/project/src/src.cpp -o CMakeFiles/app.dir/src/src.cpp.s
+CMakeFiles/app.dir/src/animal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/animal.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/system64/html/project/src/animal.cpp -o CMakeFiles/app.dir/src/animal.cpp.s
+
+CMakeFiles/app.dir/src/hen.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/hen.cpp.o: ../src/hen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/system64/html/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/src/hen.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/hen.cpp.o -c /home/system64/html/project/src/hen.cpp
+
+CMakeFiles/app.dir/src/hen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/hen.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/system64/html/project/src/hen.cpp > CMakeFiles/app.dir/src/hen.cpp.i
+
+CMakeFiles/app.dir/src/hen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/hen.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/system64/html/project/src/hen.cpp -o CMakeFiles/app.dir/src/hen.cpp.s
+
+CMakeFiles/app.dir/src/fedd.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/fedd.cpp.o: ../src/fedd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/system64/html/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/src/fedd.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/fedd.cpp.o -c /home/system64/html/project/src/fedd.cpp
+
+CMakeFiles/app.dir/src/fedd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/fedd.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/system64/html/project/src/fedd.cpp > CMakeFiles/app.dir/src/fedd.cpp.i
+
+CMakeFiles/app.dir/src/fedd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/fedd.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/system64/html/project/src/fedd.cpp -o CMakeFiles/app.dir/src/fedd.cpp.s
+
+CMakeFiles/app.dir/src/money.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/money.cpp.o: ../src/money.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/system64/html/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/app.dir/src/money.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/money.cpp.o -c /home/system64/html/project/src/money.cpp
+
+CMakeFiles/app.dir/src/money.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/money.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/system64/html/project/src/money.cpp > CMakeFiles/app.dir/src/money.cpp.i
+
+CMakeFiles/app.dir/src/money.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/money.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/system64/html/project/src/money.cpp -o CMakeFiles/app.dir/src/money.cpp.s
+
+CMakeFiles/app.dir/src/buy.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/buy.cpp.o: ../src/buy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/system64/html/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/app.dir/src/buy.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/buy.cpp.o -c /home/system64/html/project/src/buy.cpp
+
+CMakeFiles/app.dir/src/buy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/buy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/system64/html/project/src/buy.cpp > CMakeFiles/app.dir/src/buy.cpp.i
+
+CMakeFiles/app.dir/src/buy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/buy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/system64/html/project/src/buy.cpp -o CMakeFiles/app.dir/src/buy.cpp.s
+
+CMakeFiles/app.dir/src/cow.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/cow.cpp.o: ../src/cow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/system64/html/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/app.dir/src/cow.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/cow.cpp.o -c /home/system64/html/project/src/cow.cpp
+
+CMakeFiles/app.dir/src/cow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/cow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/system64/html/project/src/cow.cpp > CMakeFiles/app.dir/src/cow.cpp.i
+
+CMakeFiles/app.dir/src/cow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/cow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/system64/html/project/src/cow.cpp -o CMakeFiles/app.dir/src/cow.cpp.s
+
+CMakeFiles/app.dir/src/sheep.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/sheep.cpp.o: ../src/sheep.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/system64/html/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/app.dir/src/sheep.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/sheep.cpp.o -c /home/system64/html/project/src/sheep.cpp
+
+CMakeFiles/app.dir/src/sheep.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/sheep.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/system64/html/project/src/sheep.cpp > CMakeFiles/app.dir/src/sheep.cpp.i
+
+CMakeFiles/app.dir/src/sheep.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/sheep.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/system64/html/project/src/sheep.cpp -o CMakeFiles/app.dir/src/sheep.cpp.s
 
 # Object files for target app
 app_OBJECTS = \
 "CMakeFiles/app.dir/src/ap-project-p1.cpp.o" \
-"CMakeFiles/app.dir/src/src.cpp.o"
+"CMakeFiles/app.dir/src/animal.cpp.o" \
+"CMakeFiles/app.dir/src/hen.cpp.o" \
+"CMakeFiles/app.dir/src/fedd.cpp.o" \
+"CMakeFiles/app.dir/src/money.cpp.o" \
+"CMakeFiles/app.dir/src/buy.cpp.o" \
+"CMakeFiles/app.dir/src/cow.cpp.o" \
+"CMakeFiles/app.dir/src/sheep.cpp.o"
 
 # External object files for target app
 app_EXTERNAL_OBJECTS =
 
 app: CMakeFiles/app.dir/src/ap-project-p1.cpp.o
-app: CMakeFiles/app.dir/src/src.cpp.o
+app: CMakeFiles/app.dir/src/animal.cpp.o
+app: CMakeFiles/app.dir/src/hen.cpp.o
+app: CMakeFiles/app.dir/src/fedd.cpp.o
+app: CMakeFiles/app.dir/src/money.cpp.o
+app: CMakeFiles/app.dir/src/buy.cpp.o
+app: CMakeFiles/app.dir/src/cow.cpp.o
+app: CMakeFiles/app.dir/src/sheep.cpp.o
 app: CMakeFiles/app.dir/build.make
 app: CMakeFiles/app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/system64/html/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/system64/html/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

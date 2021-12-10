@@ -123,6 +123,33 @@ app/fast:
 	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
 .PHONY : app/fast
 
+src/animal.o: src/animal.cpp.o
+
+.PHONY : src/animal.o
+
+# target to build an object file
+src/animal.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/animal.cpp.o
+.PHONY : src/animal.cpp.o
+
+src/animal.i: src/animal.cpp.i
+
+.PHONY : src/animal.i
+
+# target to preprocess a source file
+src/animal.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/animal.cpp.i
+.PHONY : src/animal.cpp.i
+
+src/animal.s: src/animal.cpp.s
+
+.PHONY : src/animal.s
+
+# target to generate assembly for a file
+src/animal.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/animal.cpp.s
+.PHONY : src/animal.cpp.s
+
 src/ap-project-p1.o: src/ap-project-p1.cpp.o
 
 .PHONY : src/ap-project-p1.o
@@ -150,32 +177,167 @@ src/ap-project-p1.cpp.s:
 	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/ap-project-p1.cpp.s
 .PHONY : src/ap-project-p1.cpp.s
 
-src/src.o: src/src.cpp.o
+src/buy.o: src/buy.cpp.o
 
-.PHONY : src/src.o
+.PHONY : src/buy.o
 
 # target to build an object file
-src/src.cpp.o:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/src.cpp.o
-.PHONY : src/src.cpp.o
+src/buy.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/buy.cpp.o
+.PHONY : src/buy.cpp.o
 
-src/src.i: src/src.cpp.i
+src/buy.i: src/buy.cpp.i
 
-.PHONY : src/src.i
+.PHONY : src/buy.i
 
 # target to preprocess a source file
-src/src.cpp.i:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/src.cpp.i
-.PHONY : src/src.cpp.i
+src/buy.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/buy.cpp.i
+.PHONY : src/buy.cpp.i
 
-src/src.s: src/src.cpp.s
+src/buy.s: src/buy.cpp.s
 
-.PHONY : src/src.s
+.PHONY : src/buy.s
 
 # target to generate assembly for a file
-src/src.cpp.s:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/src.cpp.s
-.PHONY : src/src.cpp.s
+src/buy.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/buy.cpp.s
+.PHONY : src/buy.cpp.s
+
+src/cow.o: src/cow.cpp.o
+
+.PHONY : src/cow.o
+
+# target to build an object file
+src/cow.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/cow.cpp.o
+.PHONY : src/cow.cpp.o
+
+src/cow.i: src/cow.cpp.i
+
+.PHONY : src/cow.i
+
+# target to preprocess a source file
+src/cow.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/cow.cpp.i
+.PHONY : src/cow.cpp.i
+
+src/cow.s: src/cow.cpp.s
+
+.PHONY : src/cow.s
+
+# target to generate assembly for a file
+src/cow.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/cow.cpp.s
+.PHONY : src/cow.cpp.s
+
+src/fedd.o: src/fedd.cpp.o
+
+.PHONY : src/fedd.o
+
+# target to build an object file
+src/fedd.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/fedd.cpp.o
+.PHONY : src/fedd.cpp.o
+
+src/fedd.i: src/fedd.cpp.i
+
+.PHONY : src/fedd.i
+
+# target to preprocess a source file
+src/fedd.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/fedd.cpp.i
+.PHONY : src/fedd.cpp.i
+
+src/fedd.s: src/fedd.cpp.s
+
+.PHONY : src/fedd.s
+
+# target to generate assembly for a file
+src/fedd.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/fedd.cpp.s
+.PHONY : src/fedd.cpp.s
+
+src/hen.o: src/hen.cpp.o
+
+.PHONY : src/hen.o
+
+# target to build an object file
+src/hen.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/hen.cpp.o
+.PHONY : src/hen.cpp.o
+
+src/hen.i: src/hen.cpp.i
+
+.PHONY : src/hen.i
+
+# target to preprocess a source file
+src/hen.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/hen.cpp.i
+.PHONY : src/hen.cpp.i
+
+src/hen.s: src/hen.cpp.s
+
+.PHONY : src/hen.s
+
+# target to generate assembly for a file
+src/hen.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/hen.cpp.s
+.PHONY : src/hen.cpp.s
+
+src/money.o: src/money.cpp.o
+
+.PHONY : src/money.o
+
+# target to build an object file
+src/money.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/money.cpp.o
+.PHONY : src/money.cpp.o
+
+src/money.i: src/money.cpp.i
+
+.PHONY : src/money.i
+
+# target to preprocess a source file
+src/money.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/money.cpp.i
+.PHONY : src/money.cpp.i
+
+src/money.s: src/money.cpp.s
+
+.PHONY : src/money.s
+
+# target to generate assembly for a file
+src/money.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/money.cpp.s
+.PHONY : src/money.cpp.s
+
+src/sheep.o: src/sheep.cpp.o
+
+.PHONY : src/sheep.o
+
+# target to build an object file
+src/sheep.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/sheep.cpp.o
+.PHONY : src/sheep.cpp.o
+
+src/sheep.i: src/sheep.cpp.i
+
+.PHONY : src/sheep.i
+
+# target to preprocess a source file
+src/sheep.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/sheep.cpp.i
+.PHONY : src/sheep.cpp.i
+
+src/sheep.s: src/sheep.cpp.s
+
+.PHONY : src/sheep.s
+
+# target to generate assembly for a file
+src/sheep.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/sheep.cpp.s
+.PHONY : src/sheep.cpp.s
 
 # Help Target
 help:
@@ -186,12 +348,30 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... app"
+	@echo "... src/animal.o"
+	@echo "... src/animal.i"
+	@echo "... src/animal.s"
 	@echo "... src/ap-project-p1.o"
 	@echo "... src/ap-project-p1.i"
 	@echo "... src/ap-project-p1.s"
-	@echo "... src/src.o"
-	@echo "... src/src.i"
-	@echo "... src/src.s"
+	@echo "... src/buy.o"
+	@echo "... src/buy.i"
+	@echo "... src/buy.s"
+	@echo "... src/cow.o"
+	@echo "... src/cow.i"
+	@echo "... src/cow.s"
+	@echo "... src/fedd.o"
+	@echo "... src/fedd.i"
+	@echo "... src/fedd.s"
+	@echo "... src/hen.o"
+	@echo "... src/hen.i"
+	@echo "... src/hen.s"
+	@echo "... src/money.o"
+	@echo "... src/money.i"
+	@echo "... src/money.s"
+	@echo "... src/sheep.o"
+	@echo "... src/sheep.i"
+	@echo "... src/sheep.s"
 .PHONY : help
 
 
