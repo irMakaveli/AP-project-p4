@@ -3,19 +3,26 @@
 using namespace std;
 Money::Money(int money)
 {
-    this->money=0;//default
-    setmoney(money);
+    this->money=money;
 }
+   
 void Money::operator+(int i)
 {
     setmoney(i);
 }
-void Money::setmoney(int value)
+void Money::operator-(int i)
+{
+    getmoney(i);
+}
+void Money::setmoney(int m)
+{
+    money = m;
+}
+void Money::addmoney(int value)
 {//validating
     if(value + money < 0)//meghdar sekkeh nabaiad manfi bashad 
     {
-        cout<<"wrong value"<<endl;
-        return;
+        throw invalid_argument("you have not enough money");
     } 
     else
     {
@@ -26,25 +33,13 @@ int Money::getmoney()//dastresi be sekkeha
 {
     return this->money;
 }
-int Money::getmoney(int count , int price)//return kardan meghdar khasi az sekkeh
+int Money::getmoney(int i)//return kardan meghdar khasi az sekkeh
 {
-    if((count*price)>money)//count*price hazineh baraye kharide chiz ha
+    if(i <0 || i >money)//hazineh nabaiad manfi bashad(validating)
     {
-        cout<<"you have not enough money"<<endl;
-        exit;//exception
+        throw invalid_argument("invalid value for money");
     }
-    if((count*price)<0)//hazineh nabaiad manfi bashad(validating)
-    {
-        cout<<"wrong values"<<endl;
-        exit;//exception
-    }
-
-    this->money -=(count*price);//kam kardane yek hazineh moshakhas az sekeha
-    return count*price;
+    this->money -=(i);//kam kardane yek hazineh moshakhas az sekeha
+    return i;
 }
 
-
-void Money::operator-(int i)
-{
-    setmoney(i);
-}

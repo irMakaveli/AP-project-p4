@@ -1,14 +1,16 @@
 #ifndef MONEY_HPP
 #define MONEY_HPP
+#include <stdexcept>
 class Money
 {
     int money;
     public:
     Money(int);
+    void addmoney(int );
     void setmoney(int );
-    void operator-(int);
     int getmoney();
-    int getmoney(int , int);
+    int getmoney(int);
     void operator+(int);
+    void operator-(int);
 };
 #endif // !MONEY_HPP

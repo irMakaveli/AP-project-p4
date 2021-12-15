@@ -231,32 +231,32 @@ src/cow.cpp.s:
 	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/cow.cpp.s
 .PHONY : src/cow.cpp.s
 
-src/fedd.o: src/fedd.cpp.o
+src/feed.o: src/feed.cpp.o
 
-.PHONY : src/fedd.o
+.PHONY : src/feed.o
 
 # target to build an object file
-src/fedd.cpp.o:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/fedd.cpp.o
-.PHONY : src/fedd.cpp.o
+src/feed.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/feed.cpp.o
+.PHONY : src/feed.cpp.o
 
-src/fedd.i: src/fedd.cpp.i
+src/feed.i: src/feed.cpp.i
 
-.PHONY : src/fedd.i
+.PHONY : src/feed.i
 
 # target to preprocess a source file
-src/fedd.cpp.i:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/fedd.cpp.i
-.PHONY : src/fedd.cpp.i
+src/feed.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/feed.cpp.i
+.PHONY : src/feed.cpp.i
 
-src/fedd.s: src/fedd.cpp.s
+src/feed.s: src/feed.cpp.s
 
-.PHONY : src/fedd.s
+.PHONY : src/feed.s
 
 # target to generate assembly for a file
-src/fedd.cpp.s:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/fedd.cpp.s
-.PHONY : src/fedd.cpp.s
+src/feed.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/feed.cpp.s
+.PHONY : src/feed.cpp.s
 
 src/hen.o: src/hen.cpp.o
 
@@ -360,9 +360,9 @@ help:
 	@echo "... src/cow.o"
 	@echo "... src/cow.i"
 	@echo "... src/cow.s"
-	@echo "... src/fedd.o"
-	@echo "... src/fedd.i"
-	@echo "... src/fedd.s"
+	@echo "... src/feed.o"
+	@echo "... src/feed.i"
+	@echo "... src/feed.s"
 	@echo "... src/hen.o"
 	@echo "... src/hen.i"
 	@echo "... src/hen.s"

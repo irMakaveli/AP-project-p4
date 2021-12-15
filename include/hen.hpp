@@ -1,17 +1,23 @@
 #ifndef HEN_HPP
 #define HEN_HPP
+#ifdef _WIN
+#include<windows.h>
+#else 
+#include <unistd.h>
+#endif 
+#include <stdexcept>
 #include "animal.hpp"
 class Hen : public animal
 {
-    int HenCount = 0;
-    int egg = 0;
+    int HenCount ;
+    int egg ;
     public:
     void operator-( int );
     void operator+(int );
     Hen(int , int);//count , price
-    void setHen(int);
+    int setHen(int);
     int getHen();
-    void setEgg(int);
+    int setEgg(int);
     int getEgg();
 };
 #endif

@@ -18,4 +18,4 @@ class buy
     int gethen();
     int getsheep();
 };
-#endif // !CLASS_HPP
+#endif

@@ -96,18 +96,18 @@ CMakeFiles/app.dir/src/hen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/hen.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/system64/html/project/src/hen.cpp -o CMakeFiles/app.dir/src/hen.cpp.s
 
-CMakeFiles/app.dir/src/fedd.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/src/fedd.cpp.o: ../src/fedd.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/system64/html/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/src/fedd.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/fedd.cpp.o -c /home/system64/html/project/src/fedd.cpp
+CMakeFiles/app.dir/src/feed.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/feed.cpp.o: ../src/feed.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/system64/html/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/src/feed.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/feed.cpp.o -c /home/system64/html/project/src/feed.cpp
 
-CMakeFiles/app.dir/src/fedd.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/fedd.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/system64/html/project/src/fedd.cpp > CMakeFiles/app.dir/src/fedd.cpp.i
+CMakeFiles/app.dir/src/feed.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/feed.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/system64/html/project/src/feed.cpp > CMakeFiles/app.dir/src/feed.cpp.i
 
-CMakeFiles/app.dir/src/fedd.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/fedd.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/system64/html/project/src/fedd.cpp -o CMakeFiles/app.dir/src/fedd.cpp.s
+CMakeFiles/app.dir/src/feed.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/feed.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/system64/html/project/src/feed.cpp -o CMakeFiles/app.dir/src/feed.cpp.s
 
 CMakeFiles/app.dir/src/money.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/src/money.cpp.o: ../src/money.cpp
@@ -166,7 +166,7 @@ app_OBJECTS = \
 "CMakeFiles/app.dir/src/ap-project-p1.cpp.o" \
 "CMakeFiles/app.dir/src/animal.cpp.o" \
 "CMakeFiles/app.dir/src/hen.cpp.o" \
-"CMakeFiles/app.dir/src/fedd.cpp.o" \
+"CMakeFiles/app.dir/src/feed.cpp.o" \
 "CMakeFiles/app.dir/src/money.cpp.o" \
 "CMakeFiles/app.dir/src/buy.cpp.o" \
 "CMakeFiles/app.dir/src/cow.cpp.o" \
@@ -178,7 +178,7 @@ app_EXTERNAL_OBJECTS =
 app: CMakeFiles/app.dir/src/ap-project-p1.cpp.o
 app: CMakeFiles/app.dir/src/animal.cpp.o
 app: CMakeFiles/app.dir/src/hen.cpp.o
-app: CMakeFiles/app.dir/src/fedd.cpp.o
+app: CMakeFiles/app.dir/src/feed.cpp.o
 app: CMakeFiles/app.dir/src/money.cpp.o
 app: CMakeFiles/app.dir/src/buy.cpp.o
 app: CMakeFiles/app.dir/src/cow.cpp.o

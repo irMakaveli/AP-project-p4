@@ -24,9 +24,9 @@ CMakeFiles/app.dir/src/cow.cpp.o
  ../include/animal.hpp
  ../include/cow.hpp
  /home/system64/html/project/src/cow.cpp
-CMakeFiles/app.dir/src/fedd.cpp.o
+CMakeFiles/app.dir/src/feed.cpp.o
  ../include/feed.hpp
- /home/system64/html/project/src/fedd.cpp
+ /home/system64/html/project/src/feed.cpp
 CMakeFiles/app.dir/src/hen.cpp.o
  ../include/animal.hpp
  ../include/hen.hpp

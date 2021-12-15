@@ -3,23 +3,22 @@
 #include "cow.hpp"
 #include "money.hpp"
 using namespace std;
-
 void buy::buy_cow(Money & m)
 {
-    Cow s(1,20);
+    Cow s(0,20);
+    m.setmoney( s.setcow( m.getmoney() ) );
     cow.push_back(s);
-    m.setmoney(-20);
 }
 void buy::buy_hen(Money & m)
 {
-    Hen s(1,5);
+    Hen s(0,5);
+    m.setmoney( s.setHen( m.getmoney() ) );
     hen.push_back(s);
-    m.setmoney(-5);
 }
 void buy::buy_sheep(Money & m)
 {
-    Sheep s(1,15);
-    m.setmoney(-15);
+    Sheep s(0,15);
+    m.setmoney( s.setSheep( m.getmoney() ) );
     sheep.push_back(s);
 }
 int buy::getcow()

@@ -1,24 +1,63 @@
+#include <iostream>
 #include "hen.hpp"
 using namespace std;
-Hen::Hen(int count , int price):animal(1 , price)
+Hen::Hen(int count , int price):animal(2 , price)
 {
-   HenCount+=count;   
+    HenCount=count;
+    egg = 0;   
 }
-void Hen::setHen(int i)//afzaiesh tedade morgh ha
+int Hen::setHen(int money)//afzaiesh tedade morgh ha
 {
-    HenCount+=i/4;
+    if(money>=price)
+    {
+        HenCount += 1;
+        return money - price;
+    }
+    else
+    {
+        throw invalid_argument("not enough money");
+    }
 }
 int Hen::getEgg()
 {
+    if(egg==0)
+    {
+        throw invalid_argument("you have not egg");
+    }
     return this->egg;
 }
 int Hen::getHen()
 {
+    if(HenCount==0)
+    {
+        throw invalid_argument("you have not hen");
+    }
     return this->HenCount;
 }
-void Hen::setEgg(int i )//i haman olufeh ast
+int Hen::setEgg(int feeds )//feeds haman olufeh ast
 {
-    this->egg+=i/2;
+    int neadedFeed =HenCount * eat;
+    
+    if(neadedFeed >= feeds)
+    {
+        int Egg = feeds/eat;
+        if(Egg==0)
+        {
+            return feeds%eat;
+        }
+        else
+        {
+            sleep(5);
+            egg += Egg;
+            return feeds%eat;
+        }
+    }
+    else
+    {
+        sleep(5);
+        egg += HenCount;
+        return feeds - neadedFeed ;
+    }
 }
 void Hen::operator-(int i)
 {
@@ -29,5 +68,5 @@ void Hen::operator-(int i)
 }
 void Hen::operator+(int i)
 {
-    setHen(i*4);
+    HenCount +=i;
 }

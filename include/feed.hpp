@@ -5,9 +5,10 @@ class feed
     int feeds;
     public :
     feed(int);
+    int buyFeed(int);
     void setFeed(int);
     int getFeed();
-    int getFeed(int ,int);
+    int getFeed(int);
     bool operator+(int);
 };
 #endif

@@ -1,23 +1,28 @@
 #ifndef COW_HPP
 #define COW_HPP
+#ifdef _WIN
+#include<windows.h>
+#else 
+#include <unistd.h>
+#endif 
 #include "animal.hpp"
 class Cow : public animal
 {
-    int yogurt=0;
-    int cheese=0;
-    int cowMilk=0;
-    int CowCount=0;
+    int yogurt;
+    int cheese;
+    int cowMilk;
+    int CowCount;
     public:
     Cow(int , int );
     void operator-(int);
     void operator+(int);
-    void setcow(int);
+    int setcow(int);
     int getcow();
-    void setcowMilk(int);
+    int setcowMilk(int);
     int getcowMilk();
-    void setcheese(int);
+    void setcheese();
     int getcheese();
-    void setyogurt(int);
+    void setyogurt();
     int getyogurt();
 };
 #endif

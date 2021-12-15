@@ -6,3 +6,21 @@
 
 #IncludeRegexTransform: 
 
+../include/animal.hpp
+
+../include/hen.hpp
+windows.h
+-
+unistd.h
+-
+stdexcept
+-
+animal.hpp
+../include/animal.hpp
+
+/home/system64/html/project/src/hen.cpp
+iostream
+-
+hen.hpp
+/home/system64/html/project/src/hen.hpp
+

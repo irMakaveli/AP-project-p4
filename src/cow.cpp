@@ -1,62 +1,113 @@
 #include <iostream>
 #include "cow.hpp"
 using namespace std;
-void Cow::setcheese(int value)//tolide panir
+Cow::Cow(int count,int price):animal(5 , price)//kharide gav
 {
-     if(value<0)//meghdar manfi ghabele ghabul nist
+    CowCount =count;
+    yogurt=0;
+    cheese=0;
+    cowMilk=0;
+}
+void Cow::setcheese()//tolide panir
+{
+    if(cowMilk<=0)
     {
-        cout<<"wrong validate"<<endl;
-        exit;//exception
+        throw invalid_argument("not enough milk");
     }
-    if(value*3>cowMilk)//if shir be andazeh kafi mojud bashad
+    if(25 > cowMilk)//if shir be andazeh kafi mojud bashad
     {
-        cout<<"you have not enugh milk"<<endl;
-        exit;//exception
+        cheese += cowMilk/5;
+        cowMilk = cowMilk%5;
     }
-    cowMilk -= value*3;
-    cheese+= value;
+    else if(25 <= cowMilk)
+    {
+        cheese += 5;
+        cowMilk -= 25;
+    }
 }
 int Cow::getcheese()
 {
+    if(cheese ==0)
+    {
+        throw invalid_argument("your cheese is zero");
+    }
     return this->cheese;
 }
 int Cow::getyogurt()
 {
+    if(yogurt ==0)
+    {
+        throw invalid_argument("your yogurt is zero");
+    }
     return this->yogurt;
 }
-void Cow::setyogurt(int value)//tolide mast
+void Cow::setyogurt()//tolide mast value = milk
 {
-    if(value<0)
+    if(cowMilk<=0)
     {
-        cout<<"wrong validate"<<endl;
-        exit;//exception
+        throw invalid_argument("not enough milk");
     }
-    if(value*3>cowMilk)//if shir be andazeh kafi mojud bashad
+    if(15 > cowMilk)//if shir be andazeh kafi mojud bashad
     {
-        cout<<"you have not enugh milk"<<endl;
-        exit;//exception
+        yogurt += cowMilk/3;
+        cowMilk = cowMilk%3;
     }
-    cowMilk -= value*3;
-    yogurt+= value;
+    else if(15 <= cowMilk)
+    {
+        yogurt += 5;
+        cowMilk -= 15;
+    }
 }
 int Cow::getcowMilk()
 {
+    if(cowMilk == 0)
+    {
+        throw invalid_argument("your milk is zero");
+    }
     return this->cowMilk;
 }
-void Cow::setcowMilk(int feds)//tolide shir
+int Cow::setcowMilk(int feeds)//tolide shir
 {
-    cowMilk+=feds/5;
+    int neadedFeed = CowCount * eat;
+    if(neadedFeed >= feeds)
+    {
+        int milk = feeds/eat;
+        if(milk==0)
+        {
+            return feeds%eat;
+        }
+        else
+        {
+            sleep(5);
+            cowMilk += milk;
+            return feeds%eat;
+        }
+    }
+    else
+    {
+        sleep(5);
+        cowMilk += CowCount;
+        return feeds - neadedFeed ;
+    }
 }
-Cow::Cow(int count,int price):animal(5 , price)//kharide gav
+int Cow::setcow(int money)//afzayesh tedade gav ha
 {
-    CowCount+=count;
-}
-void Cow::setcow(int price)//afzayesh tedade gav ha
-{
-    CowCount+=price/20;
+    if(money>=price)
+    {
+        CowCount += 1;
+        return money - price;
+    }
+    else
+    {
+        throw invalid_argument("you have not enough money");
+    }
 }
 int Cow::getcow()
 {
+    if(CowCount == 0)
+    {
+        throw invalid_argument("there is no cow");
+    }
     return this->CowCount;
 }
 void Cow::operator-(int i)
@@ -68,5 +119,5 @@ void Cow::operator-(int i)
 }
 void Cow::operator+(int i)
 {
-    setcow(i*20);
+    CowCount += i;
 }
