@@ -1,10 +1,35 @@
 #include <iostream>
-#include "hen.hpp"
+#include "../include/hen.hpp"
 using namespace std;
 Hen::Hen(int count , int price):animal(2 , price)
 {
     HenCount=count;
     egg = 0;   
+}
+Hen::Hen():Hen(0,5){}
+int Hen::sellhenproduct(string s)
+{
+    if(s == "hen")
+    {
+        if(HenCount >= 1)
+        {
+            HenCount--;
+            return 5;
+        }
+        else
+        throw invalid_argument("no hen for sell");
+    }
+    else if(s == "henegg")
+    {
+        if(egg  >= 1)
+        {
+            egg--;
+            return 10;
+        }
+        else 
+        throw invalid_argument("no egg for sell");
+    }
+    return 0;
 }
 int Hen::setHen(int money)//afzaiesh tedade morgh ha
 {
@@ -34,6 +59,10 @@ int Hen::getHen()
     }
     return this->HenCount;
 }
+void Hen::addegg(int a)
+{
+   egg = a;
+}
 int Hen::setEgg(int feeds )//feeds haman olufeh ast
 {
     int neadedFeed =HenCount * eat;
@@ -47,14 +76,14 @@ int Hen::setEgg(int feeds )//feeds haman olufeh ast
         }
         else
         {
-            sleep(5);
+
             egg += Egg;
             return feeds%eat;
         }
     }
     else
     {
-        sleep(5);
+
         egg += HenCount;
         return feeds - neadedFeed ;
     }

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "feed.hpp"
+#include "../include/feed.hpp"
 using namespace std;
 int feed::getFeed(int count)//feed ghazaie heivanat ast
 {   
@@ -25,10 +25,15 @@ int feed::getFeed()//dastresi be oloofeh
 }
 void feed::setFeed(int feedcount)
 {
-    feeds += feedcount;
+
+    feeds= feedcount;
 }
 int feed::buyFeed(int money)//money = meghdare oloofeh * gheymate oloofeh(2)
 {
+    if(money ==0)
+    {
+        throw invalid_argument("not enought money");
+    }
     if(money>=10)
     {
         feeds += 5;
@@ -44,8 +49,12 @@ feed::feed(int i)
 {
     feeds = i;//default
 }
+feed::feed():feed(20)
+{
+
+}
 bool feed::operator+(int i)
 {
-    setFeed(i);
+    feeds+=i;
     return true;
 }

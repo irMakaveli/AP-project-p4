@@ -6,6 +6,7 @@ class Money
     int money;
     public:
     Money(int);
+    Money();
     void addmoney(int );
     void setmoney(int );
     int getmoney();

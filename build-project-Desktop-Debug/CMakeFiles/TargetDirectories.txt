@@ -1,0 +1,4 @@
+/home/system64/html/project/build-project-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/system64/html/project/build-project-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/system64/html/project/build-project-Desktop-Debug/CMakeFiles/project.dir
+/home/system64/html/project/build-project-Desktop-Debug/CMakeFiles/project_autogen.dir

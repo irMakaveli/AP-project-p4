@@ -1,12 +1,72 @@
 #include <iostream>
-#include "cow.hpp"
+#include "../include/cow.hpp"
 using namespace std;
+Cow::Cow():Cow(0,20)
+{
+    
+}
 Cow::Cow(int count,int price):animal(5 , price)//kharide gav
 {
     CowCount =count;
     yogurt=0;
     cheese=0;
     cowMilk=0;
+}
+void Cow::addcheese(int a)
+{
+    cheese=a;
+}
+void Cow::addyogurt(int a)
+{
+    yogurt=a;
+}
+void Cow::addmilk(int a)
+{
+    cowMilk=a;
+}
+int Cow::sellcowproduct(string s)
+{
+    if(s=="cow" )
+    {
+        if(CowCount>=1)
+        {
+            CowCount--;
+            return 20;
+        }
+        else 
+        throw invalid_argument("no cow for sell");
+    }
+    else if(s == "milk")
+    {
+        if(cowMilk >= 1)
+        {
+            cowMilk--;
+            return 15;
+        }
+        else 
+        throw invalid_argument("no milk for sell");
+    }
+    else if (s == "yogurt")
+    {
+        if(yogurt >= 1)
+        {
+            yogurt--;
+            return 18;
+        }
+        else
+        throw invalid_argument("no yogurt for sell");
+    }
+    else if (s == "cheese" && cheese >= 1)
+    {
+        if(cheese >= 1)
+        {
+            cheese--;
+            return 20;
+        }
+        else
+        throw invalid_argument("no cheese for sell");
+    }
+    return 0;
 }
 void Cow::setcheese()//tolide panir
 {
@@ -41,7 +101,7 @@ int Cow::getyogurt()
     }
     return this->yogurt;
 }
-void Cow::setyogurt()//tolide mast value = milk
+void Cow::setyogurt()//tolide mast
 {
     if(cowMilk<=0)
     {
@@ -69,23 +129,14 @@ int Cow::getcowMilk()
 int Cow::setcowMilk(int feeds)//tolide shir
 {
     int neadedFeed = CowCount * eat;
-    if(neadedFeed >= feeds)
+    if(neadedFeed > feeds)
     {
         int milk = feeds/eat;
-        if(milk==0)
-        {
-            return feeds%eat;
-        }
-        else
-        {
-            sleep(5);
-            cowMilk += milk;
-            return feeds%eat;
-        }
+        cowMilk += milk;
+        return feeds%eat;
     }
     else
     {
-        sleep(5);
         cowMilk += CowCount;
         return feeds - neadedFeed ;
     }

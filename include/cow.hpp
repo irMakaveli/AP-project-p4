@@ -14,6 +14,10 @@ class Cow : public animal
     int CowCount;
     public:
     Cow(int , int );
+    Cow();
+    void addcheese(int);
+    void addmilk(int);
+    void addyogurt(int);
     void operator-(int);
     void operator+(int);
     int setcow(int);
@@ -24,5 +28,6 @@ class Cow : public animal
     int getcheese();
     void setyogurt();
     int getyogurt();
+    int sellcowproduct(std::string);
 };
 #endif

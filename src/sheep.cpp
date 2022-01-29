@@ -1,9 +1,34 @@
-#include "sheep.hpp"
+#include "../include/sheep.hpp"
 using namespace std;
 Sheep::Sheep(int count, int price):animal(3,price)//count tedad gusfand ha va price gheimate gusfand ha
 {
     SheepCount = count;
     sheepMilk = 0;
+}
+Sheep::Sheep():Sheep(0 , 15){}
+int Sheep::sellsheepproduct(string s)
+{
+    if(s == "sheep")
+    {
+        if(SheepCount >= 1)
+        {
+            SheepCount--;
+            return 15;
+        }
+        else
+        throw invalid_argument("no sheep for sell");
+    }
+    if(s== "milk")
+    {
+        if(sheepMilk >= 1)
+        {
+            sheepMilk--;
+            return 10;
+        }
+        else
+        throw invalid_argument("no milkfr sell");
+    }
+    return 0;
 }
 int Sheep::setSheep(int money)//kharide gusfand
 {
@@ -37,14 +62,14 @@ int Sheep::setsheepMilk(int feeds)//shire gusfand
         }
         else
         {
-            sleep(5);
+            //sleep(5);
             sheepMilk += milk;
             return feeds%eat;
         }
     }
     else
     {
-        sleep(5);
+        //sleep(5);
         sheepMilk += SheepCount;
         return feeds - neadedFeed ;
     }
@@ -63,6 +88,10 @@ void Sheep::operator-(int i)
     {
         SheepCount = SheepCount - i;
     }
+}
+void Sheep::addmilk(int a)
+{
+    sheepMilk=a;
 }
 void Sheep::operator+(int i)
 {

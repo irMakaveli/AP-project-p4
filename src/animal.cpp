@@ -1,4 +1,4 @@
-#include "animal.hpp"
+#include "../include/animal.hpp"
 using namespace std;
 animal::animal(int c ,int p)
 {

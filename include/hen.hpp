@@ -14,8 +14,11 @@ class Hen : public animal
     public:
     void operator-( int );
     void operator+(int );
+    int sellhenproduct(std::string);
     Hen(int , int);//count , price
+    Hen();
     int setHen(int);
+    void addegg(int);
     int getHen();
     int setEgg(int);
     int getEgg();

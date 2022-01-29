@@ -5,6 +5,7 @@ class feed
     int feeds;
     public :
     feed(int);
+    feed();
     int buyFeed(int);
     void setFeed(int);
     int getFeed();

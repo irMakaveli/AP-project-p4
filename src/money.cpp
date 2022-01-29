@@ -1,11 +1,14 @@
 #include <iostream>
-#include "money.hpp"
+#include "../include/money.hpp"
 using namespace std;
+Money::Money():Money(200)
+{
+
+}
 Money::Money(int money)
 {
     this->money=money;
 }
-   
 void Money::operator+(int i)
 {
     setmoney(i);

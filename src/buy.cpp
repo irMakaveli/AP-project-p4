@@ -1,7 +1,7 @@
 #include <iostream>
-#include "buy.hpp"
-#include "cow.hpp"
-#include "money.hpp"
+#include "../include/buy.hpp"
+#include "../include/cow.hpp"
+#include "../include/money.hpp"
 using namespace std;
 void buy::buy_cow(Money & m)
 {
@@ -20,6 +20,7 @@ void buy::buy_sheep(Money & m)
     Sheep s(0,15);
     m.setmoney( s.setSheep( m.getmoney() ) );
     sheep.push_back(s);
+
 }
 int buy::getcow()
 {
