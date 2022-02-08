@@ -19,7 +19,7 @@ int Hen::sellhenproduct(string s)
         else
         throw invalid_argument("no hen for sell");
     }
-    else if(s == "henegg")
+    else if(s == "egg")
     {
         if(egg  >= 1)
         {
