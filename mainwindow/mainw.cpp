@@ -455,7 +455,7 @@ void Mainw::callsellhen()
 }
 void Mainw::callsellhenegg()
 {
-    QPixmap cow("egg.png");
+    QPixmap cow("eggs.png");
     ui->label_3->setPixmap(cow.scaled(150,150 , Qt::KeepAspectRatio));
      callsellhenproduct("egg");
 }
