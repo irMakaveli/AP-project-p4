@@ -107,11 +107,15 @@ Mainw::Mainw(QWidget *parent ,QString st)//open game window with file name
     QString c = jobj["money"].toString();
     m+ c.toInt();//assign money value
     ui->money->setText(c);
-
+    try{
     c = jobj["feed"].toString();
     f.setFeed(c.toInt());//assign feed value
     ui->feed->setText(QString::number(f.getFeed()));
-
+    }
+    catch(...)
+    {
+        ui->feed->setText("0");
+    }
     c = jobj["hen"].toString();
     ui->hen->setText(c);//assign hen value
     this->h + c.toInt();
